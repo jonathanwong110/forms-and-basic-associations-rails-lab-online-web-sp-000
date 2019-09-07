@@ -11,10 +11,18 @@ class Song < ActiveRecord::Base
     self.genre.name
   end
   
+  def artist_name=(name)
+    self.artist_name
+  end
+  
   def artist_name
     self.artist_name
   end
   
+  def note_contents=(name)
+    self.note_contents
+  end
+
   def note_contents
     self.note_contents
   end
